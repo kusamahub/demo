@@ -1,0 +1,218 @@
+/* Styles for calendar plugin. */
+/* Sorted by categories and sub-categories */
+
+
+/* Header */
+
+.styles-calendar .cv-header {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    /* border-radius: 10px 10px 0 0; */
+}
+
+.styles-calendar .cv-header {
+    font-size: 1em;
+    user-select: none;
+}
+
+.styles-calendar .cv-header-days {
+    display: none !important;
+}
+
+.styles-calendar .periodLabel {
+    font-size: 1em !important;
+    padding: 5px 10px;
+    right: 0;
+    position: absolute;
+}
+
+.styles-calendar .cv-header button {
+    color: #141414;
+    border: 0;
+    background: 0;
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
+
+.styles-calendar .cv-item {
+    font-size: 0.8em;
+    /* margin: 5px;
+    padding: 8px; */
+    /* width: calc((99% / 7) - 1em) !important; */
+}
+
+/* .styles-calendar .cv-item.span1{
+    width: auto;
+} */
+
+.styles-calendar .previousPeriod,
+.previousYear,
+.nextPeriod,
+.nextYear,
+.currentPeriod {
+    font-family: "Material Icons";
+}
+
+.styles-calendar .cv-header button:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #E1E3E6;
+    color: #111111;
+}
+
+.styles-calendar .cv-header button:disabled {
+    color: #ccc;
+    background-color: #f7f7f7;
+}
+
+/* Grid */
+
+.styles-calendar .cv-weeknumber {
+    background-color: #e0e0e0;
+    border-color: #CED2D7;
+    color: #808080;
+}
+
+/* .styles-calendar .cv-weeks, .cv-week, .cv-day, .cv-item{
+    border: 0 !important;
+    border-style: none !important;
+}*/
+
+.styles-calendar .cv-weeks {
+    margin: 10px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+/* .styles-calendar .cv-day{
+    border: 1px solid #CED2D7 !important;
+} */
+
+/* .styles-calendar .cv-day{
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+} */
+
+/* .styles-calendar .cv-week .cv-day:last-child{
+    border-right: 1px solid #CED2D7 !important;
+}
+
+.styles-calendar .week5 .cv-day{
+    border-bottom: 1px solid #CED2D7 !important;
+} */
+
+.styles-calendar .cv-week {
+    min-height: 8em !important;
+}
+
+/* .styles-calendar .week5 .cv-day:first-child{
+    border-radius: 0 0 0 10px;
+}
+
+.styles-calendar .week5 .cv-day:last-child{
+    border-radius: 0 0 10px 0 !important;
+}
+
+.styles-calendar .week1 .cv-day:first-child{
+    border-radius: 10px 0 0 0;
+}
+
+.styles-calendar .week1 .cv-day:last-child{
+    border-radius: 0 10px 0 0;
+} */
+
+.styles-calendar .cv-weeknumber span {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.styles-calendar .cv-day {
+    padding: 10px;
+    display: table;
+    text-align: right;
+    background-color: transparent !important;
+}
+
+.styles-calendar .cv-day .past {
+    background-color: transparent;
+}
+
+.styles-calendar .cv-day.outsideOfMonth {
+    background-color: #f7f7f7;
+}
+
+.styles-calendar .cv-day.today .cv-day-number {
+    color: #FF3B30;
+    font-weight: bold;
+}
+
+.styles-calendar .cv-day[aria-selected="true"] {
+    background-color: #ffc;
+}
+
+/* Events */
+
+.styles-calendar .cv-item {
+    top: 3em !important;
+    border-color: #e0e0f0;
+    border-radius: 0.5em;
+    background-color: #e7e7ff;
+    text-overflow: ellipsis;
+}
+
+.styles-calendar .cv-item.purple {
+    background-color: #f0e0ff;
+    border-color: #e7d7f7;
+}
+
+.styles-calendar .cv-item.orange {
+    background-color: #ffe7d0;
+    border-color: #f7e0c7;
+}
+
+.styles-calendar .cv-item.continued::before,
+.styles-calendar .cv-item.toBeContinued::after {
+    content: " \21e2 ";
+    color: #999;
+}
+
+.styles-calendar .cv-item.toBeContinued {
+    border-right-style: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.styles-calendar .cv-item.isHovered.hasUrl {
+    text-decoration: underline;
+}
+
+.styles-calendar .cv-item.continued {
+    border-left-style: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.cv-item.span3,
+.cv-item.span4,
+.cv-item.span5,
+.cv-item.span6,
+.cv-item.span7 {
+    text-align: center;
+}
+
+/* Event Times */
+
+.styles-calendar .cv-item .startTime,
+.styles-calendar .cv-item .endTime {
+    font-weight: bold;
+    color: #666;
+}
+
+/* Drag and drop */
+
+.styles-calendar .cv-day.draghover {
+    box-shadow: inset 0 0 0.2em 0.2em yellow;
+}
