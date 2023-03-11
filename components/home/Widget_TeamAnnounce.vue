@@ -10,7 +10,7 @@
                     <div @click="toggleHide" class="widget-button"><span class="material-icons">close</span></div>
                 </div>
                 <div class="widget-content">
-                    <div>Hello and welcome to the KusamaHub Demonstration Stand! Here, you can see the visual final version of KusamaHub and its features. The demo is more about the design and how the elements work. All content here is preloaded and not using API. Feel free to explore!</div>
+                    <div>Hello and welcome to the KusamaHub Demonstration Stand! Here, you can see the visual actual version of KusamaHub and its features. The demo is more about the design and how the elements work. All content here is preloaded and not using API. Feel free to explore!</div>
                 </div>
             </div>
         </div>
